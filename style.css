@@ -12,7 +12,7 @@
 /* ---------------------------------------- */
 
 .navbar-top {
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 110%; /* Ocupa todo el ancho disponible */
     height: 10vh; /* Altura del navbar superior relativa al viewport */
     display: flex; /* Usa Flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente los elementos */
@@ -20,12 +20,18 @@
     justify-content: space-between; /* Distribuye espacio entre los elementos */
 }
 
+/* iconos derecha */
+.icons-top {
+    display: flex;
+    gap: 20px; /* Espacio entre íconos */
+    align-items: center;
+}
 
 
 .icons-top i {
-    font-size: 24px;
+    font-size: 25px;
     color: #000000;
-    transition: 0.3s;
+    transition: 0.5s;
     cursor: pointer;
 }
 
@@ -34,13 +40,17 @@
 }
 
 
+/* imagen inico */
+
 .logo {
     width: 100%; /* Ocupa todo el ancho disponible */
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente (opcional) */
     margin: 0 auto; /* Asegura el centrado en navegadores antiguos */
+    text-align: center;
 }
+
 
 /* Opcional: si quieres centrar también verticalmente en el navbar */
 .navbar-top {
@@ -52,7 +62,7 @@
 .social-link i img,
 .icons i img {
     margin-left: 10px; /* Espacio entre íconos */
-    transition: 0.5s ease; /* Transición suave para efectos hover */
+    transition: 0.1s ease; /* Transición suave para efectos hover */
     cursor: pointer; /* Cambia el cursor al pasar sobre los íconos */
 }
 
