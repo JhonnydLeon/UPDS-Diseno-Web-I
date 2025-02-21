@@ -20,9 +20,7 @@
     justify-content: space-between; /* Distribuye espacio entre los elementos */
 }
 
-.icon-top{
-    color: black;
-}
+
 
 .icons-top i {
     font-size: 24px;
@@ -36,8 +34,17 @@
 }
 
 
-.logo i{
-    color: black
+.logo {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+    margin: 0 auto; /* Asegura el centrado en navegadores antiguos */
+}
+
+/* Opcional: si quieres centrar también verticalmente en el navbar */
+.navbar-top {
+    height: 100px; /* Ajusta según tu necesidad */
 }
 
 
