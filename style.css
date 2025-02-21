@@ -59,35 +59,6 @@
 
 
 
-.social-link i img,
-.icons i img {
-    margin-left: 10px; /* Espacio entre íconos */
-    transition: 0.1s ease; /* Transición suave para efectos hover */
-    cursor: pointer; /* Cambia el cursor al pasar sobre los íconos */
-}
-
-.social-link i img:hover {
-    background-color: rgb(220, 222, 224); /* Fondo claro al pasar el mouse */
-    border-radius: 50px; /* Borde redondeado */
-}
-
-@media screen and (max-width: 420px) {
-    .social-link i img,
-    .icons i img {
-        width: 20px; /* Reduce el tamaño de los íconos en pantallas pequeñas */
-    }
-}
-
-.logo h3 {
-    font-weight: bold; /* Texto en negrita */
-}
-
-@media screen and (max-width: 420px) {
-    .logo h3 {
-        font-size: 20px; /* Reduce el tamaño del texto en pantallas pequeñas */
-    }
-}
-
 /* ---------------------------------------- */
 /* ÍCONO DEL MENÚ */
 /* ---------------------------------------- */

@@ -6,48 +6,55 @@
 }
 
 
-/* navbar top */
-.navbar-top{
-    width: 100%;
-    height: 10vh;
+/* ---------------------------------------- */
+/* NAVBAR TOP */
+/* ---------------------------------------- */
+
+.navbar-top {
+    width: 110%; /* Ocupa todo el ancho disponible */
+    height: 10vh; /* Altura del navbar superior relativa al viewport */
+    display: flex; /* Usa Flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center; /* Alinea el texto al centro */
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
+}
+
+/* iconos derecha */
+.icons-top {
     display: flex;
+    gap: 20px; /* Espacio entre íconos */
     align-items: center;
+}
+
+
+.icons-top i {
+    font-size: 25px;
+    color: #000000;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icons-top i:hover {
+    color: rgb(12, 81, 178); /* Color azul al hacer hover */
+}
+
+
+/* imagen inico */
+
+.logo {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente (opcional) */
+    margin: 0 auto; /* Asegura el centrado en navegadores antiguos */
     text-align: center;
-    justify-content: space-between;
 }
-.social-link i img{
-    margin-left: 10px;
-    transition: 0.5s ease;
-    cursor: pointer;
+
+
+/* Opcional: si quieres centrar también verticalmente en el navbar */
+.navbar-top {
+    height: 100px; /* Ajusta según tu necesidad */
 }
-/* Propiedades para el fondo de las R.S. */
-.social-link i img:hover{
-    background-color: rgb(220, 222, 224); 
-    border-radius: 50px;
-}
-@media screen and (max-width:420px){
-    .social-link i img{
-        width: 20px;
-    }
-}
-.logo h3{
-    font-weight: bold;
-}
-@media screen and (max-width:420px){
-    .logo h3{
-        font-size: 20px;
-    }
-}
-.icons i img{
-    margin-left: 10px;
-    cursor: pointer;
-}
-@media screen and (max-width:420px){
-    .icons i img{
-        width: 20px;
-    }
-}
-/* navbar top */
 
 /* navbar */
 #navbar-color{
@@ -188,44 +195,31 @@
 }
 
 
-/* footer */
-#footer{
-    width: auto;
-    
+/* ---------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------- */
 
-    background-color: black;
-    margin-top: 150px;
-}
-#footer h1{
-    color: white;
-    padding-top: 30px;
-}
-#footer p{
-    color: white;
+#footer {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background-color: black; /* Color de fondo del footer */
+    margin-top: 100px; /* Espacio superior */
+    text-align: center; /* Alinea el contenido al centro */
+    padding: 30px 0; /* Espaciado interno */
 }
 
-/* Color para los icones de las R.S. */
-.icons i{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    cursor: pointer;
+#footer h1,
+#footer p {
+    color: white; /* Color del texto */
 }
 
-.footer a{
-    color: black;
-    text-decoration: none;
+.icons i {
+    color: white; /* Color de los íconos */
+    font-size: 30px; /* Tamaño de los íconos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los íconos */
 }
 
-/* En caso de hacerlo individualmente ICONS */
-/* #code i{
-    color: white;
-} */
-
-.copyright{
-    color: white;
-    margin-top: 20px;
+.copyright,
+.credite {
+    color: white; /* Color del texto */
+    margin-top: 20px; /* Espacio superior */
 }
-.credite{
-    color: white;
-}
-/* footer */
