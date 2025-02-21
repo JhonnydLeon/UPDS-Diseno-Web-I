@@ -20,6 +20,28 @@
     justify-content: space-between; /* Distribuye espacio entre los elementos */
 }
 
+.icon-top{
+    color: black;
+}
+
+.icons-top i {
+    font-size: 24px;
+    color: #000000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icons-top i:hover {
+    color: rgb(12, 81, 178); /* Color azul al hacer hover */
+}
+
+
+.logo i{
+    color: black
+}
+
+
+
 .social-link i img,
 .icons i img {
     margin-left: 10px; /* Espacio entre íconos */
@@ -97,6 +119,10 @@
 .nav-link:hover {
     color: white; /* Cambia el color del texto al pasar el mouse */
 }
+
+
+
+
 
 /* ---------------------------------------- */
 /* CONTENIDO PRINCIPAL */
