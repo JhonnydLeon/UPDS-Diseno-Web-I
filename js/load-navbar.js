@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Calcular ruta base según ubicación actual
     const currentPath = window.location.pathname;
-    const basePath = currentPath.includes('/tiendas/') ? '../' : './';
+    const basePath = currentPath.includes('UPDS-Diseno-Web-I/tiendas/') ? '../' : './';
     
     fetch(`${basePath}components/navbar-top.html`)
         .then(response => {
