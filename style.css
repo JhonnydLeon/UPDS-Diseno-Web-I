@@ -147,10 +147,16 @@
     font-weight: bold; /* Texto en negrita */
     transition: 0.5s ease; /* Transición suave para efectos hover */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    
+    
+    
 }
+
+
 
 #btn1 button:hover {
     background-color: rgba(62, 60, 60, 0.485); /* Fondo semitransparente al pasar el mouse */
+    
 }
 
 /* Estilo para los enlaces dentro del botón "COMPRAR" */
@@ -161,6 +167,7 @@
 }
 
 #btn1 button a:hover {
+    transition: 0.5s ease; /* Transición suave para efectos hover */
     color: white; /* Cambia el color del texto al pasar el mouse */
     text-decoration: none; /* Asegura que no haya subrayado */
 }
