@@ -1,263 +1,255 @@
-*{
-    margin: 0;
-    padding: 0;
+/* ---------------------------------------- */
+/* ESTILOS GLOBALES */
+/* ---------------------------------------- */
+
+* {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina rellenos predeterminados */
 }
 
+/* ---------------------------------------- */
+/* NAVBAR TOP */
+/* ---------------------------------------- */
 
-/* navbar top */
-.navbar-top{
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
+.navbar-top {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 10vh; /* Altura del navbar superior relativa al viewport */
+    display: flex; /* Usa Flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center; /* Alinea el texto al centro */
+    justify-content: space-between; /* Distribuye espacio entre los elementos */
 }
-.social-link i img{
-    margin-left: 10px;
-    transition: 0.5s ease;
-    cursor: pointer;
+
+.social-link i img,
+.icons i img {
+    margin-left: 10px; /* Espacio entre íconos */
+    transition: 0.5s ease; /* Transición suave para efectos hover */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los íconos */
 }
-/* Propiedades para el fondo de las R.S. */
-.social-link i img:hover{
-    background-color: rgb(220, 222, 224); 
-    border-radius: 50px;
+
+.social-link i img:hover {
+    background-color: rgb(220, 222, 224); /* Fondo claro al pasar el mouse */
+    border-radius: 50px; /* Borde redondeado */
 }
-@media screen and (max-width:420px){
-    .social-link i img{
-        width: 20px;
+
+@media screen and (max-width: 420px) {
+    .social-link i img,
+    .icons i img {
+        width: 20px; /* Reduce el tamaño de los íconos en pantallas pequeñas */
     }
 }
-.logo h3{
-    font-weight: bold;
+
+.logo h3 {
+    font-weight: bold; /* Texto en negrita */
 }
-@media screen and (max-width:420px){
-    .logo h3{
-        font-size: 20px;
+
+@media screen and (max-width: 420px) {
+    .logo h3 {
+        font-size: 20px; /* Reduce el tamaño del texto en pantallas pequeñas */
     }
 }
-.icons i img{
-    margin-left: 10px;
-    cursor: pointer;
+
+/* ---------------------------------------- */
+/* ÍCONO DEL MENÚ */
+/* ---------------------------------------- */
+
+.navbar-toggler {
+    border: none; /* Elimina el borde predeterminado del botón */
+    background-color: transparent; /* Fondo transparente */
 }
-@media screen and (max-width:420px){
-    .icons i img{
-        width: 20px;
+
+.navbar-toggler i {
+    font-size: 24px; /* Tamaño del ícono del menú */
+    color: white; /* Color del ícono */
+    transition: transform 0.3s ease; /* Animación suave al hacer hover */
+}
+
+.navbar-toggler:hover i {
+    transform: scale(1.1); /* Agrandar ligeramente el ícono al pasar el mouse */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-toggler i {
+        font-size: 20px; /* Reduce el tamaño del ícono en pantallas pequeñas */
     }
 }
-/* navbar top */
 
-/* main content */
-.main-content{
-    width: 100%;
-    height: 90vh;
-    background-image: url(login/image/escritorio.jpg);
-    background-size: cover;
-    background-position: 70%;
+/* ---------------------------------------- */
+/* NAVBAR PRINCIPAL */
+/* ---------------------------------------- */
+
+#navbar-color {
+    background-color: rgb(12, 81, 178); /* Color de fondo del navbar principal */
 }
 
-/* navbar */
-#navbar-color{
-    background-color: rgb(12, 81, 178);
-}
-.navbar-nav{
-    margin: auto;
-}
-.nav-link{
-    margin-left: 30px;
-    font-weight: bold;
-    color: black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-.nav-link:hover{
-    color: white;
-}
-/* navbar */
-
-
-/* content */
-.content{
-    margin-top: 150px;
-    margin-left: 60px;
-    color: aliceblue;
-    
-}
-.content h1{
-    font-size: 50px;
+.navbar-nav {
+    margin: auto; /* Centra el menú horizontalmente */
 }
 
-/* Para darle propiedades al botton "comprar" */
-.content a{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-.color-bnt1:hover{
-    color: white;
+.nav-link {
+    margin-left: 30px; /* Espacio entre los enlaces del menú */
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color del texto */
+    transition: 0.5s ease; /* Transición suave para efectos hover */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los enlaces */
 }
 
-/* ----------------------------- */
-
-.container #serviceswe img{
-    left: auto;
+.nav-link:hover {
+    color: white; /* Cambia el color del texto al pasar el mouse */
 }
-/* ---- */
 
-/* Esta pila se puede ocupar cuando el css esta antes del boostrap */
-/* .content #btn1 button a{
-    color: black;
-    text-decoration: none;
-} */
+/* ---------------------------------------- */
+/* CONTENIDO PRINCIPAL */
+/* ---------------------------------------- */
 
+.main-content {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 90vh; /* Altura del contenido principal relativa al viewport */
+    background-image: url(login/image/escritorio.jpg); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: 70%; /* Posiciona la imagen horizontalmente */
+}
 
+.content {
+    margin-top: 150px; /* Espacio superior */
+    margin-left: 60px; /* Espacio izquierdo */
+    color: aliceblue; /* Color del texto */
+}
 
+.content h1 {
+    font-size: 50px; /* Tamaño del título */
+}
+
+@media screen and (max-width: 420px) {
+    .content h1 {
+        font-size: 30px; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+}
+
+/* ---------------------------------------- */
+/* BOTONES */
+/* ---------------------------------------- */
+
+/* Contenedor del botón #btn3 */
+#btn3 {
+    text-align: center; /* Centra horizontalmente el contenido dentro del contenedor */
+}
+
+/* Botón "COMPRAR" */
 #btn1 button {
-    width: 150px;
-    height: 32px;
-    background: transparent;
-
-    text-decoration: none;
-    color: black;
-
-    border: 1px solid black;
-    letter-spacing: 3px;
-    font-weight: bold;
-    transition: 0.5s ease;
-    cursor: pointer;
+    width: 150px; /* Ancho del botón */
+    height: 32px; /* Altura del botón */
+    background: transparent; /* Fondo transparente */
+    text-decoration: none; /* Elimina el subrayado */
+    color: black; /* Color del texto */
+    border: 1px solid black; /* Borde negro */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    font-weight: bold; /* Texto en negrita */
+    transition: 0.5s ease; /* Transición suave para efectos hover */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
-/* Fondo del boton comprar */
-#btn1 button:hover{
-    background-color: rgba(62, 60, 60, 0.485);
+#btn1 button:hover {
+    background-color: rgba(62, 60, 60, 0.485); /* Fondo semitransparente al pasar el mouse */
+}
+
+/* Estilo para los enlaces dentro del botón "COMPRAR" */
+#btn1 button a {
+    color: black; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+#btn1 button a:hover {
+    color: white; /* Cambia el color del texto al pasar el mouse */
+    text-decoration: none; /* Asegura que no haya subrayado */
+}
+
+/* Botones "Ver más" */
+#btn2 button,
+#btn3 button,
+#btn4 button {
+    width: 100px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+    background: transparent; /* Fondo transparente */
+    border: 1px solid black; /* Borde negro */
+    transition: 0.5s ease; /* Transición suave para efectos hover */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+#btn2 button:hover,
+#btn3 button:hover,
+#btn4 button:hover {
+    background-color: rgba(62, 60, 60, 0.194); /* Fondo semitransparente al pasar el mouse */
     
 }
-@media screen and (max-width:420px){
-    .content h1{
-        font-size: 30px;
-    }
-}
-/* content */
 
-/* main content */
-
-/* card1 */
-#btn2 button{
-    width: 100px;
-    height: 30px;
-    background: transparent;
-    border: 1px solid black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#btn2 button:hover{
-    background-color: rgba(62, 60, 60, 0.303);
+/* Estilo para los enlaces dentro de los botones "Ver más" */
+.container #btn2 button a,
+.container #btn3 button a,
+.container #btn4 button a {
+    color: black; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    
+    
 }
 
-/* Hacemos que el link no sobresalte */
-.container #btn2 button a{
-    color: black;
-    text-decoration: none;
-}
-/* card1 */
-
-/* card2 */
-#tpc{
-    box-shadow: 0 0 5px black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#tpc:hover{
-    transform: translateY(-10px);
-}
-/* card2 */
-
-/* card3 */
-#c h4{
-    font-weight: unset;
-    font-size: small;
+.container #btn2 button a:hover,
+.container #btn3 button a:hover,
+.container #btn4 button a:hover {
+    
+    text-decoration: none; /* Asegura que no haya subrayado */
 }
 
-#c p{
-    font-weight: bold;
-}
-#btn3{
-    text-align: center;
-}
-#btn3 button{
-    width: 150px;
-    height: 30px;
-    background: transparent;
-    border: 1px solid black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#btn3 button:hover{
-    background-color: rgba(62, 60, 60, 0.194);
+/* ---------------------------------------- */
+/* TARJETAS */
+/* ---------------------------------------- */
+
+#c h4 {
+    font-weight: unset; /* Sin negrita */
+    font-size: small; /* Tamaño pequeño para los títulos de las tarjetas */
 }
 
-/* Hacemos que el link no sobresalte */
-.container #btn3 button a{
-    color: black;
-    text-decoration: none;
-}
-/* --------- */
-@media screen and (max-width:895px){
-    #btn3 button{
-        width: 100px;
-    }
-}
-/* card3 */  
-/* Hacemos que el link no sobresalte */
-.container #btn4 button a{
-    color: black;
-    text-decoration: none;
+#c p {
+    font-weight: bold; /* Texto en negrita para descripciones */
 }
 
-/* card3 */
-#btn4 button{
-    width: 150px;
-    height: 30px;
-    background: transparent;
-    border: 1px solid black;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#btn4 button:hover{
-    background-color: rgba(62, 60, 60, 0.172);
-}
-/* footer */
-#footer{
-    width: 100%;
-    background-color: black;
-    margin-top: 100px;
-}
-#footer h1{
-    color: white;
-    padding-top: 30px;
-}
-#footer p{
-    color: white;
+/* Hover para las tarjetas */
+#tpc {
+    box-shadow: 0 0 5px black; /* Sombra ligera */
+    transition: 0.5s ease; /* Transición suave para efectos hover */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
 }
 
-/* Color para los icones de las R.S. en el caso de que sean icons y no imgs*/
-.icons i{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    cursor: pointer;
+#tpc:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta hacia arriba al pasar el mouse */
 }
 
-.footer a{
-    color: black;
-    text-decoration: none;
+/* ---------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------- */
+
+#footer {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background-color: black; /* Color de fondo del footer */
+    margin-top: 100px; /* Espacio superior */
+    text-align: center; /* Alinea el contenido al centro */
+    padding: 30px 0; /* Espaciado interno */
 }
 
-.copyright{
-    color: white;
-    margin-top: 20px;
+#footer h1,
+#footer p {
+    color: white; /* Color del texto */
 }
-.credite{
-    color: white;
+
+.icons i {
+    color: white; /* Color de los íconos */
+    font-size: 30px; /* Tamaño de los íconos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los íconos */
 }
-/* footer */
+
+.copyright,
+.credite {
+    color: white; /* Color del texto */
+    margin-top: 20px; /* Espacio superior */
+}
