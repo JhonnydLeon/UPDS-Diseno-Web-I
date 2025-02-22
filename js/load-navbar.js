@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Calcular ruta base según ubicación actual
     const currentPath = window.location.pathname;
     const basePath = currentPath.includes('UPDS-Diseno-Web-I/tiendas/') ? '../' : './';
-    const basePath2 = currentPath.includes('UPDS-Diseno-Web-I/tiendas/') ? '../' : './';
+    const basePath2 = currentPath.includes('UPDS-Diseno-Web-I/contactos/') ? '../' : './';
     
     
     //para var tiendas
