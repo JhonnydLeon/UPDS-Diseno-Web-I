@@ -112,37 +112,33 @@
 #btn4 button:hover{
     background-color: rgba(62, 60, 60, 0.172);
 }
-/* footer */
-#footer{
-    width: 100%;
-    background-color: black;
-    margin-top: 100px;
-}
-#footer h1{
-    color: white;
-    padding-top: 30px;
-}
-#footer p{
-    color: white;
+
+
+/* ---------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------- */
+
+#footer {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background-color: black; /* Color de fondo del footer */
+    margin-top: 100px; /* Espacio superior */
+    text-align: center; /* Alinea el contenido al centro */
+    padding: 30px 0; /* Espaciado interno */
 }
 
-/* Color para los icones de las R.S. en el caso de que sean icons y no imgs*/
-.icons i{
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    cursor: pointer;
+#footer h1,
+#footer p {
+    color: white; /* Color del texto */
 }
 
-.footer a{
-    color: black;
-    text-decoration: none;
+.icons i {
+    color: white; /* Color de los íconos */
+    font-size: 30px; /* Tamaño de los íconos */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los íconos */
 }
 
-.copyright{
-    color: white;
-    margin-top: 20px;
+.copyright,
+.credite {
+    color: white; /* Color del texto */
+    margin-top: 20px; /* Espacio superior */
 }
-.credite{
-    color: white;
-}
-/* footer */
